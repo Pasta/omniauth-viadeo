@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe "OmniAuth::Strategies::Viadeo" do
   subject do
-    OmniAuth::Strategies::Viadeo.new(nil, @options || {})
+    OmniAuth::Strategies::Viadeo.new(nil)
   end
 
   context 'client options' do
-    it 'has correct LinkedIn site' do
+    it 'has correct Viadeo api site' do
       subject.options.client_options.site.should eq('https://api.viadeo.com/')
     end
 

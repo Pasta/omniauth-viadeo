@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gemspec
 
-gem 'omniauth-oauth', :git => 'https://github.com/intridea/omniauth-oauth.git'
+gem 'omniauth-oauth2'
 
 group :development, :test do
   gem 'guard'
