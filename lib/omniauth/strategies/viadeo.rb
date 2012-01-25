@@ -23,9 +23,9 @@ module OmniAuth
         OmniAuth::Utils.deep_merge(
           super, {
             'uid' => user_data['id'],
-            'user_info' => user_info,
+            'user_info' => info,
             'extra' => {
-              'user_hash' => user_data,
+              'user_hash' => raw_info,
             },
           }
         )
