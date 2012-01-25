@@ -61,6 +61,7 @@ DEPENDENCIES
   guard-bundler
   guard-rspec
   multi_json
+  omniauth
   omniauth-oauth!
   omniauth-viadeo!
   rack-test
