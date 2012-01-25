@@ -22,7 +22,7 @@ module OmniAuth
       def auth_hash
         OmniAuth::Utils.deep_merge(
           super, {
-            'uid' => user_data['id'],
+            'uid' => raw_info['id'],
             'user_info' => info,
             'extra' => {
               'user_hash' => raw_info,
