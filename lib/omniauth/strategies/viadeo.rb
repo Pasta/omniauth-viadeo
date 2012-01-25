@@ -47,21 +47,21 @@ module OmniAuth
 
       info do
         {
-          :name => user_data['name'],
-          :link => user_data['link'],
-          :first_name => user_data['first_name'],
-          :last_name => user_data['last_name'],
-          :gender => user_data['gender'],
-          :nickname => user_data['nickname'],
-          :has_picture => user_data['has_picture'] ,         
-          :picture_small => user_data['picture_small'],
-          :picture_large => user_data['picture_large'],
-          :headline => user_data['headline'],
-          :introduction => user_data['introduction'],
-          :interests => user_data['interests'],
-          :location => user_data['location'],
-          :is_premium => user_data['is_premium'],
-          :premium_since => user_data['premium_since']         
+          :name => raw_info['name'],
+          :link => raw_info['link'],
+          :first_name => raw_info['first_name'],
+          :last_name => raw_info['last_name'],
+          :gender => raw_info['gender'],
+          :nickname => raw_info['nickname'],
+          :has_picture => raw_info['has_picture'] ,         
+          :picture_small => raw_info['picture_small'],
+          :picture_large => raw_info['picture_large'],
+          :headline => raw_info['headline'],
+          :introduction => raw_info['introduction'],
+          :interests => raw_info['interests'],
+          :location => raw_info['location'],
+          :is_premium => raw_info['is_premium'],
+          :premium_since => raw_info['premium_since']         
         }
       end
       
