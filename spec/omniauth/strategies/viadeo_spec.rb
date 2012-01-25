@@ -13,7 +13,7 @@ describe "OmniAuth::Strategies::Viadeo" do
  
 
     it 'has correct access token path' do
-      subject.options.client_options.access_token_path.should eq('https://secure.viadeo.com/oauth-provider/access_token2')
+      subject.options.client_options.token_url.should eq('https://secure.viadeo.com/oauth-provider/access_token2')
     end
 
     it 'has correct authorize url' do

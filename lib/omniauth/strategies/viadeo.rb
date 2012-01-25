@@ -16,7 +16,7 @@ module OmniAuth
       option :client_options, {
           :site => 'https://api.viadeo.com/',
           :authorize_url => 'https://secure.viadeo.com/oauth-provider/authorize2',
-          :access_token_path => 'https://secure.viadeo.com/oauth-provider/access_token2'
+          :token_url => 'https://secure.viadeo.com/oauth-provider/access_token2'
         }
       
       def auth_hash
