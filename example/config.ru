@@ -1,10 +1,10 @@
 require 'bundler/setup'
 require 'sinatra/base'
-require 'omniauth-linkedin'
+require 'omniauth-viadeo'
 
 class App < Sinatra::Base
   get '/' do
-    redirect '/auth/linkedin'
+    redirect '/auth/viadeo'
   end
 
   get '/auth/:provider/callback' do
@@ -21,7 +21,7 @@ end
 use Rack::Session::Cookie
 
 use OmniAuth::Builder do
-  provider :linkedin, ENV['LINKEDIN_CONSUMER_KEY'], ENV['LINKEDIN_CONSUMER_SECRET']
+  provider :viadeo, ENV['VIADEO_CONSUMER_KEY'], ENV['VIADEO_CONSUMER_SECRET']
 end
 
 run App.new
