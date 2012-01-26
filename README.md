@@ -1,4 +1,28 @@
+# OmniAuth Viadeo
 
+This gem contains the Viadeo strategy for OmniAuth.
+
+## How To Use It
+
+Usage is as per any other OmniAuth 1.0 strategy. So let's say you're using Rails, you need to add the strategy to your `Gemfile` along side omniauth:
+
+    gem 'omniauth'
+    gem 'omniauth-viadeo'
+
+Of course if one or both of these are unreleased, you may have to pull them in directly from github e.g.:
+
+    gem 'omniauth', :git => 'https://github.com/intridea/omniauth.git'
+    gem 'omniauth-viadeo', :git => 'https://github.com/pasta/omniauth-viadeo.git'
+
+Once these are in, you need to add the following to your `config/initializers/omniauth.rb`:
+
+    Rails.application.config.middleware.use OmniAuth::Builder do
+      provider :viadeo, "consumer_key", "consumer_secret" 
+    end
+
+You will obviously have to put in your key and secret, which you get when you register your app with Viadeo.
+
+Now just follow the README at: https://github.com/intridea/omniauth
 
 ## License
 
