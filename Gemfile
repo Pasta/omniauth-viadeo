@@ -9,6 +9,6 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-bundler'
   gem 'growl'
-  gem 'rb-fsevent'
+  gem 'rb-fsevent', "~>0.9"
   gem 'multi_json'
 end
